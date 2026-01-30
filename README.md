@@ -1,16 +1,65 @@
-# React + Vite
+# React-Backend 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**React-Backend** is a sample project built using **React** and **Vite** to demonstrate how to make API calls, handle routing, use Axios, and manage error handling in a React app. :contentReference[oaicite:3]{index=3}
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Key Concepts Covered
 
-## React Compiler
+✔ React with Vite setup  
+✔ Routing using React Router  
+✔ Making API calls with Axios  
+✔ Handling loading & error states  
+✔ Clean component structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (UI Library)  
+- **Vite** (Build Tool / Dev Server)  
+- **Axios** (HTTP client)  
+- **React Router** (Routing)  
+- **JavaScript** (Programming Language)  
+- **HTML & CSS**
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Prteek14/React-Backend.git
+
+```
+
+###  2. Navigate to the project directory
+
+```bash
+cd React-Backend
+```
+
+### 3️. Install dependencies
+
+```bash
+npm install
+```
+
+### 4️. Start the development server
+```bash
+npm run dev
+```
+---
+
+## ✨ Features
+
+* Easy API integration using Axios
+
+* React Router based navigation
+
+* Error & loading state handling
+
+* Scalable and clean folder structure
