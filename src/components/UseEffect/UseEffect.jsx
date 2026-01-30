@@ -104,30 +104,30 @@ function UseEffect() {
       setUsers(users); // rollback
     }
   };
-  
+
   return (
-    <div className=" border-2 border-gray-300 p-4   mx-8 m-8 rounded">
-      <h1 className="text-2xl font-bold text-center m-2 p-3  mx-auto bg-[#5265b4]">
+    <div className="min-h-screen w-full mb-5">
+      <h1 className="text-sm font-bold text-center mb-8 mt-8 p-2 w-2/4 mx-auto bg-[#5265b4]   sm:text-lg md:text-xl">
         UseEffect Component
       </h1>
 
       <hr className="m-4 border-t-2 rounded" />
 
-      <p className="text-center m-15 font-medium text-xl">
+      <p className="text-center m-4  text-xs sm:text-xl sm:font-semibold">
         This is a sample component demonstrating the use of the useEffect hook
         in React.
       </p>
 
       <hr className="m-4 border-t-2 rounded" />
 
-      <h2 className="text-xl font-bold text-center m-4 p-4 w-4/5 mx-auto bg-[#5265b4]">
+      <h2 className="text-sm font-bold text-center mb-8 mt-8 p-2 w-3/4 mx-auto bg-[#5265b4]   sm:text-lg md:text-xl">
         From here we understand API calls, Loading state, Error handling, axios , http methods.
       </h2>
 
-      <div className="flex justify-center gap-4 m-5 bg-[#7cbec8] p-4 rounded w-2/4 mx-auto">
+      <div className="flex flex-col justify-center gap-2 m-2 bg-[#7cbec8] p-3 rounded w-5/6 mx-auto sm:flex-row sm:items-center sm:gap-4 sm:text-sm lg:gap-6 lg:text-lg">
         <input
           type="text"
-          className="border-2 border-black p-2 ml-4 rounded placeholder:text-slate-700"
+          className="border-2 border-black p-2 rounded placeholder:text-slate-700"
           placeholder="Enter your name"
           value={name}
           onChange={(e) => {
@@ -135,20 +135,20 @@ function UseEffect() {
           }}
         />
         <button
-          className="bg-blue-500 text-white p-2 ml-4 rounded hover:bg-blue-600"
+          className="bg-blue-500 text-white p-2  rounded hover:bg-blue-600"
           onClick={addUser}
         >
           Add User
         </button>
         <input
           type="number"
-          className="border-2 border-black p-2 ml-4 rounded placeholder:text-slate-700"
+          className="border-2 border-black p-2  rounded placeholder:text-slate-700"
           placeholder="Enter user ID to remove"
           value={delId}
           onChange={(e) => setDelId(e.target.value)}
         />
         <button
-          className="bg-red-500 text-white p-2 ml-4 rounded hover:bg-red-700"
+          className="bg-red-500 text-white p-2  rounded hover:bg-red-700"
           onClick={removeUser}
         >
           Remove User
@@ -160,8 +160,8 @@ function UseEffect() {
       ) : error ? (
         <p className="text-red-500 text-center mt-4">{error}</p>
       ) : (
-        <table className="border-collapse border border-gray-400 w-5/6 mx-auto mt-6
-        rounded-lg ">
+        <table className="border-collapse border border-gray-400 w-3/4 mx-auto mt-6
+        rounded-lg text-[8px] sm:text-sm md:text-base lg:text-lg  sm:5/6">
           <caption className="caption-top text-xl font-bold mb-2">
             Users Details
           </caption>
@@ -177,13 +177,13 @@ function UseEffect() {
 
           <tbody>
             {users.map((user) => (
-              <tr key={user.id} className=" hover:bg-gray-600 cursor-pointer ">
+              <tr key={user.id} className=" hover:bg-gray-600 cursor-pointer  ">
                 <td className="border border-gray-400 p-2">{user.id}</td>
                 <td className="border border-gray-400 p-2">{user.name}</td>
                 <td className="border border-gray-400 p-2 ">{user.email}</td>
                 <td className="border border-gray-400 p-2">
                   <button
-                    className="bg-red-500 text-white p-1 rounded hover:bg-red-700"
+                    className="bg-red-500 text-white rounded hover:bg-red-700 sm:p-2"
                     onClick={() => updateUser(user)}
                   >
                     update user

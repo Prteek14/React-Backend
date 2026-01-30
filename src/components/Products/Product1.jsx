@@ -1,7 +1,7 @@
 function Product1() {
   return (
     <>
-      <p className="w-75 flex justify-self-center  text-center font-bold text-5xl bg-[#f73a1d] border-2 rounded border-black m-10 p-10 text-[#242424]">
+      <p className="w-4/5 flex justify-self-center justify-center  text-center   bg-[#0044ff] border-2 rounded border-black m-10 p-2 text-[#00c8ff] sm:text-xl">
         Products Page - 1
       </p>
     </>
