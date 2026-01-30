@@ -121,7 +121,8 @@ function UseEffect() {
       <hr className="m-4 border-t-2 rounded" />
 
       <h2 className="text-sm font-bold text-center mb-8 mt-8 p-2 w-3/4 mx-auto bg-[#5265b4]   sm:text-lg md:text-xl">
-        From here we understand API calls, Loading state, Error handling, axios , http methods.
+        From here we understand API calls, Loading state, Error handling, axios
+        , http methods.
       </h2>
 
       <div className="flex flex-col justify-center gap-2 m-2 bg-[#7cbec8] p-3 rounded w-5/6 mx-auto sm:flex-row sm:items-center sm:gap-4 sm:text-sm lg:gap-6 lg:text-lg">
@@ -146,6 +147,7 @@ function UseEffect() {
           placeholder="Enter user ID to remove"
           value={delId}
           onChange={(e) => setDelId(e.target.value)}
+          required
         />
         <button
           className="bg-red-500 text-white p-2  rounded hover:bg-red-700"
@@ -160,8 +162,10 @@ function UseEffect() {
       ) : error ? (
         <p className="text-red-500 text-center mt-4">{error}</p>
       ) : (
-        <table className="border-collapse border border-gray-400 w-3/4 mx-auto mt-6
-        rounded-lg text-[8px] sm:text-sm md:text-base lg:text-lg  sm:5/6">
+        <table
+          className="border-collapse border border-gray-400 w-3/4 mx-auto mt-6
+        rounded-lg text-[8px] sm:text-sm md:text-base lg:text-lg  sm:5/6"
+        >
           <caption className="caption-top text-xl font-bold mb-2">
             Users Details
           </caption>
